@@ -53,7 +53,7 @@ rT.start()
 
 while shutdown == False:
     if join == False:
-        s.sendto(("[" + alias + "] => join chat ").encode("utf-8"), server)
+        s.sendto(("[" + alias + "] => Приєднався до чату ").encode("utf-8"), server)
         join = True
     else:
         try:
@@ -70,7 +70,7 @@ while shutdown == False:
 
             time.sleep(0.2)
         except:
-            s.sendto(("[" + alias + "] <= left chat ").encode("utf-8"), server)
+            s.sendto(("[" + alias + "] <= Залишив чат ").encode("utf-8"), server)
             shutdown = True
 
 rT.join()
