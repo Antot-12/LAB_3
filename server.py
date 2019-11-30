@@ -10,7 +10,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
 
 quit = False
-print("[ Server Started ]")
+print("[ Сервер включився ]")
 
 while not quit:
     try:
@@ -28,7 +28,7 @@ while not quit:
             if addr != client:
                 s.sendto(data, client)
     except:
-        print("\n[ Server Stopped ]")
+        print("\n[ Сервер виключився ]")
         quit = True
 
 s.close()
