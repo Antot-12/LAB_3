@@ -2,7 +2,7 @@ import socket
 import time
 
 host = socket.gethostbyname(socket.gethostname())
-port = 4040
+port = 4050
 
 clients = []
 
